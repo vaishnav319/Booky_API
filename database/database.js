@@ -29,7 +29,7 @@ const author = [
   },
   {
     id: 2,
-    name: 'Vaishnav',
+    name: 'Jeff Besos',
     books: ['12345678Book'],
   },
 ];

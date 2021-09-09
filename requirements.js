@@ -25,10 +25,24 @@
 //We need an API :-
 //To get all the authors-done
 //To get a specific author-done
-//to get a list of authors based on book
+//to get a list of authors based on book-done
 
 //3.Publications
 //we need an API:-
-//To get all publications
-//To get a specific publication
-//To get a list of publications based on a book
+//To get all publications-done
+//To get a specific publication-done
+//To get a list of publications based on a book-done
+
+//Updated requirements:
+//Post requirements:
+//1.Add new book-done
+//2.Add new Publication
+//3.Add new Author
+
+/*********   PUT Requirements    ******/
+//update book details
+
+/****** DELETE *****/
+//Delete a book
+//Delete author from book
+//Delete author from book and related book from author

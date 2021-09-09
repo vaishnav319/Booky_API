@@ -318,6 +318,46 @@ Access          Public
 Parameter       isbn
 Method          PUT
 */
+//////////////////////////////////////////////////////////////-------------------------not done
+// booky.put('/book/author/update/:isbn', async (req, res) => {
+//   //update book database
+//   const updatedBook = await BookModel.findOneAndUpdate(
+//     {
+//       ISBN: req.params.isbn,
+//     },
+
+//     {
+//       $addToSet: {
+//         authors: req.body.newAuthor,
+//       },
+//     },
+//     {
+//       new: true,
+//     }
+//   );
+
+//   //update author database
+//   const updatedAuthor = await AuthorModel.findOneAndUpdate(
+//     {
+//       id: req.body.newAuthor,
+//     },
+//     {
+//       $addToSet: {
+//         books: req.params.isbn,
+//       },
+//     },
+//     {
+//       new: true,
+//     }
+//   );
+//   console.log(updatedAuthor);
+//   console.log(updatedBook);
+//   return res.json({
+//     books: updatedBook,
+//     authors: updatedAuthor,
+//     message: 'Authors added',
+//   });
+// });
 
 booky.put('/book/author/update/:isbn', async (req, res) => {
   const updatedBook = await BookModel.findOneAndUpdate(
